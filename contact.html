@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- The site must be responsive and look good on a phone. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Velvet Thunder</title>
+    <!-- An external stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/thunderbolt.jpg">
+</head>
+<body>
+    <!-- 2+ fixed page elements to make the site look consistent - for example: header, navigation, sidebar or footer. Note that Navigation and Header cannot both count if the nav is in the header. -->
+    <header>
+        <a class="logo" href="index.html"><img src="images/thunderbolt.jpg" alt="">VELVET THUNDER</a>
+        <!-- 4+ pages: a home page, a contact page, and two other pages. -->
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the Band</a>
+        <a href="music.html">Our Music</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html" class="current">Contact</a>
+        </nav>
+    </header>
+    <div class="page-title">
+        <h1>Contact</h1>
+        <p>Tell us about your event and we will get back to you within two days.</p>
+    </div>
+    <!-- Content must be "real" and realistic. Lorum Ipsum text is not acceptable. -->
+    <div class="container">
+        <!-- A form -->
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Event Date</label>
+            <input type="date" id="date" name="date">
+            <label for="type">Type of Event</label>
+            <select id="type" name="type">
+                <option>Private Party</option>
+                <option>Bar or Venue</option>
+                <option>Corporate Event</option>
+                <option>Wedding</option>
+                <option>Other</option>
+            </select>
+            <label for="message">Tell Us About Your Event</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <p><button type="submit" class="button">Send Request</button></p>
+        </form>
+        <h2>Prefer to Call?</h2>
+        <p>Call or text us at (555) 123-4567 or email booking@velvetthunderband.com.</p>
+    </div>
+    <!-- fixed element 2: footer -->
+    <footer>
+        <p><strong>Velvet Thunder</strong> - Classic Rock Cover Band - Columbus, OH</p>
+        <p>booking@velvetthunderband.com | (555)123-4567</p>
+        <p><a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+    </footer>
+</body>
+</html>

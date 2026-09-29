@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #f7f3f9;
+}
+h1, h2, h3 {
+    font-family: "Arial Black", Arial, sans-serif;
+    color: #2e1437;
+}
+a {
+    color: #9b1b4a;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.center {
+    text-align: center;
+}
+/* 2+ fixed page elements to make the site look consistent - for example: header, navigation,
+sidebar or footer. Note that Navigation and Header cannot both count if the nav is in the
+header */
+/* fixed element 1:header */
+header {
+    background-color: #2e1437;
+    border-bottom: 4px solid #f5c518;
+    padding: 15px 20px;
+    text-align: center;
+}
+.logo {
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 28px;
+    color: #f5c518;
+    text-decoration: none;
+}
+/* thunderbolt logo next to the band name */
+.logo img {
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+nav a:hover {
+    color: #f5c518;
+}
+nav a.current {
+    color: #f5c518;
+    text-decoration: underline;
+}
+.button {
+    display: inline-block;
+    background-color: #f5c518;
+    color: #2e1437;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.button:hover {
+    background-color: #9b1b4a;
+    color: white;
+}
+/* 2+ images – one must be a background image. The file size of an image must be less than
+60k unless it is for a banner – then it can be up to 110k. (crowd-photo.jpg, 17 KB) */
+.hero {
+    background-image: url("../images/crowd-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+.overlay {
+    background-color: rgba(46, 20, 55, 0.6);
+    padding: 100px 20px;
+}
+.hero h1 {
+    color: white;
+    font-size: 48px;
+    margin: 0;
+}
+.page-title {
+    background-color: #6b2a5e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.page-title h1 {
+    color: white;
+    margin: 0;
+}
+.flash {
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid #f5c518;
+    margin-top: 20px;
+}
+.box {
+    background-color: white;
+    border-left: 5px solid #9b1b4a;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+/* a table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+th {
+    background-color: #2e1437;
+    color: white;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+/* a form */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #6b2a5e;
+    box-sizing: border-box;
+}
+/* fixed element 2: footer */
+footer {
+    background-color: #2e1437;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #f5c518;
+}
+footer a {
+    color: #f5c518;
+}
+/* The site must be responsive and look good on a phone. */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .overlay {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        padding: 6px 8px;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
